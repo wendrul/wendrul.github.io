@@ -1,0 +1,29 @@
+---
+layout: default
+author: etienne
+title: About me
+subtitle: casita
+hide_hero: true
+---
+
+<div id="intro-strings">
+  {%for intro in site.data.intros%}
+    <p {% unless intro.default %} hidden {% endunless %}>
+      {{intro.text}}
+    </p>
+  {% endfor %}
+</div>
+<span id="intro"></span>
+
+
+<a href="{% link index2.html %}">index2 (test)</a>
+
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+<script type="module" src="{{ base.url | prepend: site.url }}/assets/js/mainPage.js"></script>
