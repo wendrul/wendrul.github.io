@@ -4,6 +4,7 @@ author: etienne
 title: About me
 subtitle: casita
 hide_hero: true
+email2: nani@nani.nani
 ---
 
 <div id="intro-strings">
@@ -18,7 +19,7 @@ hide_hero: true
 
 <a href="{% link index2.html %}">index2 (test)</a>
 
-
+<span>{{page.email2}}</span>
 <ul>
   {% for post in site.posts %}
     <li>
