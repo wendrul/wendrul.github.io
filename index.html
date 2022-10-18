@@ -9,12 +9,14 @@ email2: nani@nani.nani
 
 <div id="intro-strings">
   {%for intro in site.data.intros%}
-    <p {% unless intro.default %} hidden {% endunless %}>
+    <p {% unless intro.default %} hidden {% endunless %} class="title is-1">
       {{intro.text}}
     </p>
   {% endfor %}
 </div>
-<span id="intro"></span>
+<div class="intro title is-1">
+  <span id="intro"></span>
+</div>
 
 
 <a href="{% link index2.html %}">index2 (test)</a>
