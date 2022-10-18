@@ -1,0 +1,34 @@
+{
+  "name": "gksdud",
+  "version": "2.1.0",
+  "description": "A tiny JavaScript utility that corrects miswritten Hangeul sentences like *gksdud*",
+  "main": "lib/gksdud.js",
+  "types": "lib/gksdud.d.ts",
+  "scripts": {
+    "test": "mocha test/gksdud.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChalkPE/gksdud.git"
+  },
+  "keywords": [
+    "gksdud",
+    "korean",
+    "hangeul",
+    "hangul",
+    "ime"
+  ],
+  "author": "ChalkPE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChalkPE/gksdud/issues"
+  },
+  "homepage": "https://github.com/ChalkPE/gksdud#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.0.2"
+  },
+  "engines": {
+    "node": ">= 6.2.1"
+  }
+}
