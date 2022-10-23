@@ -6,10 +6,14 @@
   },
   {
     "language": "ES",
-    "text": "Hola, soy Etienne AKA <i>wendrul</i> y hago cosas."
+    "text": "Hola, soy Etienne AKA <i>wendrul</i> y creo cosas."
   },
   {
     "language": "KR",
-    "text": "윤, 윤윤윤윤윤윤윤윤윤윤윤윤윤윤윤윤윤"
+    "text": "안녕하세요 저는 <i>wendrul</i>이고 일을 합니다."
+  },
+  {
+    "language": "FR",
+    "text": "Bonjour! Je suis Etienne aka <i>wendrul</i> et je cree des trucs."
   }
 ]

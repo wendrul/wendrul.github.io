@@ -31,7 +31,7 @@ const decomplex = c => ({ 'ㅘ': 'ㅗㅏ' , 'ㅙ': 'ㅗㅐ' , 'ㅚ': 'ㅗㅣ' , 
 const toHangeul = c => ALPHABETS.includes(c) ? HANGEUL_JAMOS[ALPHABETS.indexOf(c)] : c
 const replaceAlphabets = s => typeof s === 'string' ? [...s].map(toHangeul).join('') : ''
 const stack = (i, m, f = ' ') => String.fromCharCode(S_BASE + final(f) + medial(m) * T_COUNT + initial(i) * N_COUNT)
-const gksdud = s => replaceAlphabets(s).replace(HANGEUL_SYLLABLE, (_, i, m, f) => stack(i, complex(m), complex(f)))
+export const gksdud = s => replaceAlphabets(s).replace(HANGEUL_SYLLABLE, (_, i, m, f) => stack(i, complex(m), complex(f)))
 
 
 const toAlphabet = c => HANGEUL_JAMOS.includes(c) ? ALPHABETS[HANGEUL_JAMOS.indexOf(c)] : c;
@@ -51,7 +51,7 @@ const decomposeHangeul = c => {
     return ret.join('');
 }
 const replaceHangeulSyl = s => typeof s === 'string' ? [...s].map(decomposeHangeul).join('') : '';
-const reverseGksdud = s => [...replaceHangeulSyl(s)].map(toAlphabet).join('');
+export const reverseGksdud = s => [...replaceHangeulSyl(s)].map(toAlphabet).join('');
 
 if (typeof module === 'object' && typeof exports === 'object') {
     module.exports = gksdud 
