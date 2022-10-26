@@ -1,20 +1,35 @@
 <footer class="footer">
-    <div class="container">
-        
-        {% if site.footer_menu %}
-        <div class="columns is-multiline">
-            {% for item in site.data[site.footer_menu] %}
-            <div class="column has-text-centered">
-                <div>
-                    <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
-                </div>
-            </div>
-            {% endfor %}
+  <div class="container">
+    {% if site.footer_menu %}
+    <div class="columns is-multiline">
+      {% for item in site.data[site.footer_menu] %}
+      <div class="column has-text-centered">
+        <div>
+          <a href="{{ item.link | relative_url }}" class="link"
+            >{{ item.name }}</a
+          >
         </div>
-        {% endif %}
-
-        <div class="content is-small has-text-centered">
-            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
-        </div>
+      </div>
+      {% endfor %}
     </div>
+    {% endif %}
+
+    <div class="content is-small has-text-centered">
+      <p>
+        <a href="https://bulma.io">
+          <img
+            src="https://bulma.io/images/made-with-bulma.png"
+            alt="Made with Bulma"
+            width="128"
+            height="24"
+          />
+        </a>
+      </p>
+      <p>
+        References / Inspiration:
+        <a href="https://brittanychiang.com/">Brittany Chiang</a>,
+        <a href="https://jgthms.com/">Jeremy Thomas</a>
+      </p>
+    </div>
+  </div>
 </footer>

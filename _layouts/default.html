@@ -5,7 +5,9 @@
 
   <body>
 
-    {%- include header.html -%}
+    {% unless page.no_navbar %}
+        {% include header.html %}
+    {% endunless %}
     {% unless page.hide_hero %}
         {% include hero.html %}
     {% endunless %}
@@ -39,11 +41,11 @@
         </div>
     </section> {%- endcomment -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
         {{ content }}
+    {%- comment -%} <main class="page-content" aria-label="Content">
+      <div class="wrapper">
       </div>
-    </main>
+    </main> {%- endcomment -%}
 
     {% unless page.hide_footer %}
         {% include footer.html %}

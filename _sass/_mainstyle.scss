@@ -9,7 +9,7 @@
   background-position: 0% center;
   // display: flexbox;
   // alignitems: center;
-  height: 100vh;
+  height: 101vh;
 }
 
 .intro-smokescreen {
@@ -79,4 +79,17 @@
   // box-shadow: -4px -1px 5px rgb(167, 167, 167), 4px -1px 5px rgb(167, 167, 167);
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
   min-height: 100vh;
+}
+
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  // top: 0;
+  // background-color: #280b0b00;
+  // width: 100%;
+}
+
+.sticky + .container {
+  padding-top: $navbar-height;
 }
