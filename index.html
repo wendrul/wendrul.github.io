@@ -14,19 +14,54 @@ email2: nani@nani.nani
     </p>
   {% endfor %}
 </div>
-<div class="intro title is-1">
-  <span id="intro"></span>
+
+<div class="intro-section">
+  <div class="intro-smokescreen">
+    <div class="container is-max-desktop intro-body">
+      <div class="container intro-tophalf">
+        <div class="intro-typed">
+          <span id="intro"></span> 
+        </div>
+      </div>
+      <div class="container intro-lowerhalf">
+        <div id="social-buttons">
+          <ul class="social">
+            <li><i class="fa-brands fa-github fa-2x"></i></li>
+            <li><i class="fa-brands fa-twitter fa-2x"></i></li>
+            <li><i class="fa-brands fa-linkedin fa-2x"></i></li>
+            <li><i class="fa-brands fa-youtube fa-2x"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="container is-max-desktop mainpage-content">
+  <section  class="section">
+    <div id="AboutMe" class="title">
+      About Me
+    </div>
+    holaaa
+  </section>
+  <section class="section">
+    <div>
+      Hola
+    </div>
+    <ul>
+    {% for post in site.posts %}
+      <li class="box">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+
 </div>
 
 
-<a href="{% link index2.html %}">index2 (test)</a>
 
-<span>{{page.email2}}</span>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+
 <script type="module" src="{{ base.url | prepend: site.url }}/assets/js/mainPage.js"></script>
+

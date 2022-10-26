@@ -1,0 +1,82 @@
+.intro-section {
+  @include unselectable;
+  background-image: url("/assets/pics/rt.jpeg");
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0% center;
+  // display: flexbox;
+  // alignitems: center;
+  height: 100vh;
+}
+
+.intro-smokescreen {
+  background-color: rgba($color: #5b5b5b, $alpha: 0.7);
+  height: 100%;
+}
+
+.intro-body {
+  display: flex;
+  flex-direction: column;
+  // padding: 3rem 1.5rem;
+  // padding: 10rem 1.5rem 1rem 1.5rem;
+  height:100%;
+}
+
+.intro-tophalf {
+  // height: 50%;
+  margin: 10px;
+  text-align: left;
+  flex-basis: 50%;
+  // display: flex;
+  // flex-direction:row;
+}
+
+.intro-typed {
+  color:azure;
+  word-break: break-all;
+  font-size: 50px;
+  line-height: 110%;
+  font-weight: 700;
+  // height: 30vh;
+  margin:10px;
+  position: absolute;
+  padding: 1rem 1rem 1rem 1rem;
+  // margin-top: auto;
+  bottom:0;
+}
+
+.typed-cursor {
+  word-break:break-all;
+  display: inline-block;
+}
+
+#intro {
+  word-break: keep-all;
+  color: inherit;
+}
+
+.intro-lowerhalf {
+  // height: 50%;
+  flex-basis: 50%;
+
+}
+
+#social-buttons {
+  color:azure;
+  padding-top: 10rem;
+
+}
+
+.seeit {
+  border: 1px solid red;
+  background-color: rgba($color: #a7ffb2, $alpha: 0.1);
+}
+
+.mainpage-content {
+  // box-shadow: -4px -1px 5px rgb(167, 167, 167), 4px -1px 5px rgb(167, 167, 167);
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  // min-height: 100vh;
+}

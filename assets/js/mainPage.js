@@ -3,9 +3,8 @@ import Typed from "/node_modules/typed.js/src/typed.js"
 // import {gksdud, reverseGksdud} from "/gksdud/lib/gksdud.js"
 
 let options = {
-    strings: ["Hola", "Hello", "Bonjour", "こんにちは", "안녕하세요! hola"],
-    typeSpeed: 60,
     stringsElement: '#intro-strings',
+    typeSpeed: 60,
     loop: true,
     shuffle: true,
     smartBackspace: false,
@@ -14,4 +13,5 @@ let options = {
   };
   
 let typed = new Typed('#intro', options);
+// typed.stop();
 

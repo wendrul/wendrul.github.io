@@ -10,11 +10,15 @@ $tabs-link-active-border-bottom-color: $primary;
 
 $modal-content-width: 800px;
 
-@import "minima";
+
+// @import "minima";
 @import "../node_modules/bulma/bulma.sass";
 $hero-darken: $dark !default;
 
-@import "scrol";
+// @import "scrol";
+@import "mainstyle";
+@import "social_media";
+
 
 // @import "layout";
 // @import "syntax";
