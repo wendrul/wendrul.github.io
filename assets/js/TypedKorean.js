@@ -1,5 +1,4 @@
-import Typed from "../../node_modules/typed.js/src/typed.js"
-import {gksdud, reverseGksdud} from "../../gksdud/lib/gksdud.js"
+import {gksdud, reverseGksdud} from "./gksdud/lib/gksdud.js"
 
 function isASCII(str) {
     return /^[\x00-\x7F]*$/.test(str);

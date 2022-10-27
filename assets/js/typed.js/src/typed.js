@@ -1,6 +1,6 @@
 import { initializer } from './initializer.js';
 import { htmlParser } from './html-parser.js';
-import { KoreanIMEString } from '../../../assets/js/TypedKorean.js';
+import { KoreanIMEString } from '../../TypedKorean.js';
 
 /**
  * Welcome to Typed.js!
