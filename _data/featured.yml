@@ -1,0 +1,29 @@
+spacebar:
+  title: spacebar
+  label: GameJam
+  project_url: https://mewmewdevart.itch.io/spacebar
+  image_src: /assets/pics/spacebar.png
+  description: >
+    In only under 5 days, we developed "spacebar", a small game about managing
+    your own alien canteen. The game is playable online if you click here!
+
+miniRT:
+  title: A ray tracing engine
+  label: miniRT
+  project_url: https://github.com/wendrul/miniRT
+  image_src: https://media.githubusercontent.com/media/wendrul/miniRT/master/img/seven4k.jpg
+  description: >
+    A small ray tracing engine built from scratch in C, capable of rendering a 
+    variety of geometrical shapes. It implements features such as multi-source 
+    lighting, reflection, gamma correction 
+
+transcendence:
+  title: An online multiplayer pong platform
+  label: ft_transcendence
+  project_url: https://github.com/wendrul/ft_transcendence
+  image_src: /assets/pics/pong.gif
+  description: >
+    As a team of 5 devs, we built a complete web application using NestJS and 
+    React that allows users to play tohether the traditional game of pong
+    but with our personnal twist. Developing a fullstack application, a game
+    and managing the team creating it.

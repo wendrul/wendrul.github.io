@@ -93,3 +93,25 @@
 .sticky + .container {
   padding-top: $navbar-height;
 }
+
+// .overflow-child-left {
+//   position: absolute;
+//   left: 0;
+//   right: calc(50% - 300px);
+//   border: 2px solid #f00;
+// }
+
+// .project-left {
+//   display: flex;
+//   align-self: right;
+// }
+
+img.gif-defaultimg {
+  position: absolute;
+  opacity: 1;
+  background: white;
+}
+
+img.gif-defaultimg:hover {
+  opacity: 0;
+}

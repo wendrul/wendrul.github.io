@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 $family-sans-serif: 'Montserrat', sans-serif;
-$primary: #00ffd0 !default;
+$primary: #ffd454eb !default;
 
 $tabs-link-active-color: $primary;
 $tabs-link-active-border-bottom-color: $primary;
@@ -16,9 +16,9 @@ $modal-content-width: 800px;
 $hero-darken: $dark !default;
 
 // @import "scrol";
+@import "projects";
 @import "mainstyle";
 @import "social_media";
-@import "projects";
 
 
 // @import "layout";

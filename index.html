@@ -1,7 +1,7 @@
 ---
 layout: default
 author: etienne
-title: About me
+title: Etienne de Montbel
 subtitle: casita
 hide_hero: true
 no_navbar: true
@@ -49,9 +49,21 @@ email2: nani@nani.nani
     <div id="Projects" class="title">
       Things I've built
     </div>
-    {% include project-card.html %}
+
+    {% include project-card.html project=site.data.featured.spacebar %}
+
+    {% include project-card.html project=site.data.featured.miniRT %}
+
+    {% include project-card.html project=site.data.featured.transcendence %}
+    
+    <button class="button is-info is-fullwidth">
+    <span>See all my projects on GitHub</span>
+    <span class="icon">
+      <i class="fab fa-github"></i>
+    </span>
+  </button>
   </section>
-  
+
   <!-- ABOUT ME -->
   <section  class="section">
     <div id="AboutMe" class="title">
@@ -60,7 +72,7 @@ email2: nani@nani.nani
     <div class="columns is-mobile is-multiline is-centered is-vcentered">
       <div class="column is-narrow">
         <figure class="image is-128x128">
-          <img class= "is-rounded" src="https://media.gettyimages.com/photos/actor-benedict-cumberbatch-is-seen-on-the-set-of-doctor-strange-on-2-picture-id518892994?s=594x594" alt="AltText">       
+          <img class= "is-rounded " src="/assets/pics/IMG_7053 (1).jpg" alt="AltText">       
         </figure>
       </div>
       <div class="column is-four-fifths content">
