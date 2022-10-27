@@ -1,5 +1,4 @@
-import { KoreanIMEString } from "./TypedKorean.js";
-import Typed from "/node_modules/typed.js/src/typed.js";
+import Typed from "./typed.js/src/typed.js";
 import "./navbar.js"
 
 let options = {
