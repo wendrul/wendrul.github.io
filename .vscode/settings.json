@@ -1,0 +1,16 @@
+{
+  "editor.accessibilityPageSize": 10,
+  "files.associations": {
+    "*.html": "liquid",
+    // "*.js": "liquid-javascript",
+    // "*.css": "liquid-css",
+    // "*.scss": "liquid-scss",
+  },
+  "emmet.includeLanguages": {
+    "liquid": "html"
+  },
+  "liquid.format.enable": true,
+  "[liquid]": {
+    "editor.formatOnSave": false
+  },
+}

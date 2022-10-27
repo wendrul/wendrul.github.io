@@ -1,0 +1,18 @@
+<div class="project-container container">
+  <a href="{{ include.project_url }}">
+    <div class="project">
+      <div class="project-content">
+        <div class="title is-7 is-bold">{{include.label}}</div>
+        <h4 class="title is-4">{{include.title}}</h4>
+        <div class="project-details">
+          <div class="tile notification is-primary">
+            <p class="">{{ include.description }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-img">
+        <img src="{{include.image_src | default }}" alt="">
+      </div>
+    </div>
+  </a>
+</div>

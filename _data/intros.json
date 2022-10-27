@@ -1,0 +1,27 @@
+[
+  {
+    "default": true,
+    "language": "EN",
+    "text": " Hey there! <br/> My name is Etienne and I like building stuff."
+  },
+  {
+    "language": "ES",
+    "text": "Hola! <br/> Me llamo Etienne y me gusta crear cosas."
+  },
+  {
+    "language": "KR",
+    "text": "안녕하세요! <br/> 저는 새로운 것을 만드는 Etienne 이에요."
+  },
+  {
+    "language": "FR",
+    "text": "Bonjour! <br/> Je suis Etienne et j'invente des trucs."
+  },
+  {
+    "language": "ES",
+    "text": "me acabo de levantarㅋㅋㅋㅋ"
+  },
+  {
+    "language": "EN",
+    "text": "i like trains"
+  }
+]

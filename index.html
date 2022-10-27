@@ -1,1 +1,117 @@
-Hello Mundo
+---
+layout: default
+author: etienne
+title: Etienne de Montbel
+subtitle: casita
+hide_hero: true
+no_navbar: true
+email2: nani@nani.nani
+---
+
+
+
+<div class="intro-section">
+  <div class="intro-smokescreen">
+    <div class="container is-max-desktop intro-body">
+      <div id="intro-strings">
+        {%for intro in site.data.intros%}
+          <p {% unless intro.default %} hidden {% endunless %} class="title is-1">
+            {{intro.text}}
+          </p>
+        {% endfor %}
+      </div>
+      <div class="container intro-tophalf">
+        <div class="intro-typed">
+          <span id="intro"></span> 
+        </div>
+      </div>
+      <div class="container intro-lowerhalf">
+        <div id="social-buttons">
+          <ul class="social">
+            <li><a href="https://github.com/{{site.github_username}}"><i class="fa-brands fa-github fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/{{ site.twitter_username}}"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+            <li><a href="{{site.linkedin_url}}"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+            <li><a href="{{site.youtube_url}}"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+{%- include header.html -%}
+
+<div class="container is-max-desktop mainpage-content">
+  
+  <!-- Highlighted projects -->
+  <section class="section">
+    <div id="Projects" class="title">
+      Things I've built
+    </div>
+
+    {% include project-card.html project=site.data.featured.spacebar %}
+
+    {% include project-card.html project=site.data.featured.miniRT %}
+
+    {% include project-card.html project=site.data.featured.transcendence %}
+    
+    <button class="button is-info is-fullwidth">
+    <span>See all my projects on GitHub</span>
+    <span class="icon">
+      <i class="fab fa-github"></i>
+    </span>
+  </button>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section  class="section">
+    <div id="AboutMe" class="title">
+      About Me
+    </div>
+    <div class="columns is-mobile is-multiline is-centered is-vcentered">
+      <div class="column is-narrow">
+        <figure class="image is-128x128">
+          <img class= "is-rounded " src="/assets/pics/IMG_7053 (1).jpg" alt="AltText">       
+        </figure>
+      </div>
+      <div class="column is-four-fifths content">
+        <p>
+          Hello! My name is Etienne and I am a Computer Science student at the 
+          <a href="https://42.fr/" target="_blank" rel="noopener noreferrer">
+            42 school
+          </a> 
+          in Paris. I am passionate about
+          understanding complex systems, and that's precisely what drove me into
+          learning how computers work. I'm currently working as an R&D Assistant
+          for 
+          <a href="https://www.a.ki/" target="_blank" rel="noopener noreferrer">
+            Aki Technologies</a>.
+        </p>
+        <p>
+          I am also a hobbyist inventor/maker and love everything that has to do
+          with electronics, 3D printers, CNC machines... I sometimes document
+          the process or outcome of my projects in small videos that I upload
+          on YouTube.
+        </p>
+
+      </div>
+    </div>
+    
+  </section>
+
+    <!-- <ul>
+    {% for post in site.posts %}
+      <li class="box">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>-->
+
+</div>
+
+
+
+
+<script type="module" src="{{ base.url | prepend: site.url }}/assets/js/mainPage.js"></script>
+

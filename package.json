@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "typed.js": "^2.0.12"
+  }
+}
