@@ -21,15 +21,17 @@
 title: 🥑 wendrul
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My name is Etienne and I love doing anything related to math, computer
+  science, electronics, game dev and the like! Welcome to my page!
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.wendrul.fr" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mrwandril
 github_username:  wendrul
 linkedin_url:     https://www.linkedin.com/in/etienne-de-thomassin-918765193
 youtube_url:      https://www.youtube.com/channel/UCrs1GpBY4AF-gt_51XLn7Hg
+
+google_analytics: G-L5Y8N5J01F
 
 # Build settings
 # theme: minima
