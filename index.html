@@ -15,7 +15,7 @@ email2: nani@nani.nani
     <div class="container is-max-desktop intro-body">
       <div id="intro-strings">
         {%for intro in site.data.intros%}
-          <p {% unless intro.default %} hidden {% endunless %} class="title is-1">
+          <p {% unless intro.default %} {% endunless %} hidden class="title is-1">
             {{intro.text}}
           </p>
         {% endfor %}
@@ -28,10 +28,10 @@ email2: nani@nani.nani
       <div class="container intro-lowerhalf">
         <div id="social-buttons">
           <ul class="social">
-            <li><a href="https://github.com/{{site.github_username}}"><i class="fa-brands fa-github fa-2x"></i></a></li>
-            <li><a href="https://twitter.com/{{ site.twitter_username}}"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
-            <li><a href="{{site.linkedin_url}}"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
-            <li><a href="{{site.youtube_url}}"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/{{site.github_username}}"><i class="fa-brands fa-github fa-2x"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/{{ site.twitter_username}}"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="{{site.linkedin_url}}"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="{{site.youtube_url}}"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
           </ul>
         </div>
       </div>
@@ -55,13 +55,16 @@ email2: nani@nani.nani
     {% include project-card.html project=site.data.featured.miniRT %}
 
     {% include project-card.html project=site.data.featured.transcendence %}
-    
+
+  <a href="https://github.com/wendrul">
     <button class="button is-info is-fullwidth">
-    <span>See all my projects on GitHub</span>
-    <span class="icon">
-      <i class="fab fa-github"></i>
-    </span>
-  </button>
+      <span>See all my projects on GitHub</span>
+      <span class="icon">
+        <i class="fab fa-github"></i>
+      </span>
+    </button>
+  </a> 
+  
   </section>
 
   <!-- ABOUT ME -->
